@@ -1,2 +1,2 @@
 # Creator-Pro
-Creator Pro modifications including Klipper
+Creator Pro modifications including running Klipper

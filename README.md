@@ -17,6 +17,8 @@ In addition, through upgrading the firmware on the stock board to Klipper, I've 
 - Probe (inductive)
 - Filament sensors  
 
+**I will be adding more material, for now:**
+
 ## Klipper
 
 I've produced a video that walks you through:

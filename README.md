@@ -23,8 +23,44 @@ I've produced a video that walks you through:
 
 - Building a Mainsail installation
 - Generating and flashing the Klipper firmware
-- Configuring Klipper using my configuration files in ![Configuration](https://github.com/pedrsj/Creator-Pro/tree/main/klipper/config)
+- Configuring Klipper using my ![configuration](klipper/config/) files 
+
+Klipper support the LCD and LED.
+
+**Installing Klipper on a Creator Pro:**
 
 https://user-images.githubusercontent.com/49697720/154837388-ef2b174c-0af7-4918-bf0e-0fd06683107a.mp4
+
+The provided macros have been implimented in a slicer neutral way, tested against the latest releases of:
+
+- Cura         
+- PrusaSlicer  
+- SuperSlicer
+
+GCode start and end macros are provided (START_PRINT & END_PRINT). The start macro utilises slicer variables to determine how many extruders are active so you don't have to change the start code when switching between dual and single (either extruder) extrusion, PROVIDED you configure the slicer as defined below.
+
+If you are utilising a probe, the start print macro supports bed leveling by setting the MESH parameter top true i.e. MESH=true. If requested it will do the following:
+
+- Load a saved mesh for the defined bed temperature, if it exists else
+- Load the saved default mesh, if it exists else
+- Generate a new mesh
+
+Extruder offsets are defined in the ACTIVATE_EXTRUDER overriden macro, DO NOT define them in your slicer without changing this macro.
+
+- ## Cura
+
+Start GCode:
+```
+START_PRINT BED={material_bed_temperature_layer_0} EXTRUDER={material_print_temperature_layer_0, 0} EXTRUDER1={material_print_temperature_layer_0, 1} MESH=false EXTRUDERS_ENABLED={extruders_enabled_count} INITIAL_EXTRUDER={adhesion_extruder_nr}
+```
+
+End GCode:
+```
+END_PRINT
+```
+## PrusaSlicer
+
+## SuperSlicer
+
 
 

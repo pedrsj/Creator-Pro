@@ -33,7 +33,7 @@ Klipper support the LCD and LED.
 
 https://user-images.githubusercontent.com/49697720/154837388-ef2b174c-0af7-4918-bf0e-0fd06683107a.mp4
 
-The provided macros have been implimented in a slicer neutral way, tested against the latest releases of:
+The provided macros have been implemented in a slicer neutral way, tested against the latest releases of:
 
 - Cura         
 - PrusaSlicer / SuperSlicer

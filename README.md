@@ -17,4 +17,14 @@ In addition, through upgrading the firmware on the stock board to Klipper, I've 
 - Probe (inductive)
 - Filament sensors  
 
+## Klipper
+
+I've produced a video that walks you through:
+
+- Building a Mainsail installation
+- Generating and flashing the Klipper firmware
+- Configuring Klipper using my configuration files in ![Configuration](https://github.com/pedrsj/Creator-Pro/tree/main/klipper/config)
+
+https://user-images.githubusercontent.com/49697720/154837388-ef2b174c-0af7-4918-bf0e-0fd06683107a.mp4
+
 

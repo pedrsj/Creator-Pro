@@ -25,6 +25,8 @@ I've produced a video that walks you through:
 - Generating and flashing the Klipper firmware
 - Configuring Klipper using my ![configuration](klipper/config/) files 
 
+The printer configuration file has my printer settings for input shapping, PID calibration and pressure advance.
+
 Klipper support the LCD and LED.
 
 **Installing Klipper on a Creator Pro:**
@@ -55,12 +57,15 @@ Start GCode:
 ```
 START_PRINT BED={material_bed_temperature_layer_0} EXTRUDER={material_print_temperature_layer_0, 0} EXTRUDER1={material_print_temperature_layer_0, 1} MESH=false EXTRUDERS_ENABLED={extruders_enabled_count} INITIAL_EXTRUDER={adhesion_extruder_nr}
 ```
+To avoid changing start gcode when changing between single or dual extruders, disable / enable extruders that will be active / inactive via the Cura interface i.e.
+
+
+![cura](https://user-images.githubusercontent.com/49697720/154839521-d1f144b9-40a8-490c-9b33-ff83ac3d6004.png)
 
 End GCode:
 ```
 END_PRINT
 ```
-To avoid changing start gcode when changing between single or dual extruders, disable / enable extruders that will be active / inactive via the Cura interface
 
 ## PrusaSlicer
 

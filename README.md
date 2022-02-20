@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Creator Pro upgrade project, primarily focused on using Klipper with the stock board, a version of the MightyBoard. Hopefully this project is of some use to others.
+Creator Pro upgrade project, primarily focused on using Klipper **with the stock board**, a version of the MightyBoard. Hopefully this project is of some use to others.
 
 I have several printers, a mix of mainstream hobbyist machines and self-built. I use my Creator to print higher temperature materials, predominantly ABS/ASA, single and dual extrusion.
 

@@ -24,7 +24,7 @@ In addition, through upgrading the firmware on the stock board to Klipper, I've 
 I've produced a video that walks you through:
 
 - Building a Mainsail installation
-- Generating and flashing the Klipper firmware
+- Generating and flashing the Klipper ![firmware](klipper/firmware/README.md)
 - Configuring Klipper using my ![configuration](klipper/config/) files 
 
 The printer configuration file has my printer settings for input shapping, PID calibration and pressure advance.

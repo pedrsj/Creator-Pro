@@ -40,6 +40,8 @@ The provided macros have been implemented in a slicer neutral way, tested agains
 - Cura         
 - PrusaSlicer / SuperSlicer
 
+whatever the slicer you use, set the origin of the printer to be 0, 0 (stock firmware assumes centre of the bed).
+
 GCode start and end macros are provided (START_PRINT & END_PRINT). The start macro utilises slicer variables to determine how many extruders are active so you don't have to change the start code when switching between dual and single (either extruder) extrusion, PROVIDED you configure the slicer as defined below.
 
 If you are utilising a probe, the start print macro supports bed leveling by setting the MESH parameter to true i.e. MESH=true. If requested it will do the following:
